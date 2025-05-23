@@ -28,6 +28,7 @@ export default Navbar;
 
 function NavVarProfile(){
   let userData  = useSelector((state) => state.auth);
+  
   const handleLogut = logoutUser()
   return (
     <section className='flex items-center'>

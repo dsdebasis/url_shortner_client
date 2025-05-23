@@ -7,7 +7,7 @@ const UserUrl = () => {
   const { data: urls, isLoading, isError, error } = useQuery({
     queryKey: ['userUrls'],
     queryFn: getAllUserUrls,
-    refetchInterval: 30000, // Refetch every 30 seconds to update click counts
+    refetchInterval: 300000, // Refetch every 30 seconds to update click counts
     staleTime: 0, // Consider data stale immediately so it refetches when invalidated
   })
   const [copiedId, setCopiedId] = useState(null)
